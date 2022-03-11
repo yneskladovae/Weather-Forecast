@@ -1,0 +1,64 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&family=Fredoka:wght@300;500&family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="search-bar">
+                <h1>Weather Forecast</h1>
+                <div class="search-city">
+                    <input type="text" id="city-value" value="Gomel">
+                    <button id="btn">Search</button>
+                </div>
+            </div>
+            <header class="header">
+                <div class="header-items">
+                    <div class="header-item-coords">
+                        <p id="coords"></p>
+                    </div>
+                    <div>
+                        <p class="city-name-item" id="city-name"></p>
+                    </div>
+                    <div class="header-item-date">
+                        <p class="date-item" id="date"></p>
+                        <p id="weekDay"></p>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="content">
+                    <div class="content-column left-side-content">
+                        <div id="weather-icon"></div>
+                        <div id="weather"></div>
+                        <div id="weather-description"></div>
+                    </div>
+                    <div class="content-column">
+                        <div id="temperature"></div>
+                        <div id="feels-like"></div>
+                        <div id="max-temp"><span class="temp-max">&lt;</span></div>
+                        <div id="min-temp"><span class="temp-min">&lt;</span></div>
+                    </div>
+                    <div class="content-column right-side-content">
+                        <ul class="parametrs">
+                            <li id="humidity"></li>
+                            <li id="pressure"></li>
+                            <li id="wind"></li>
+                            <li id="gust"></li>
+                            <li id="sunrise-and-sunset"></li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
